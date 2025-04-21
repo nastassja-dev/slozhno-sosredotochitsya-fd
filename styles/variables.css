@@ -2,3 +2,38 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --button-color-hover: rgba(255, 0, 112, 0.4);
+  --button-color: #ff0070;
+  --decorated-color: #ff0070;
+  --title-color: #DB00FF;
+  --title-weight: 700;
+  --subtitle-color: #000028;
+  --subtitle-text-weight: 700;
+  --header-text-color: #000028;
+  --header-text-weight: 700;
+  --content-font-family: 'IBM Plex Mono', monospace;
+  --content-font-size: 18px;
+  --content-line-height: 23.4px;
+  --content-font-weight: 400;
+  --page-padding: 10px;
+  --main-margin: 40px;
+  --section-gap: 50px;
+  --content-section-gap: 20px;
+  --article-section-gap: 10px;
+  --galery-gap: 10px;
+}
+
+@media (768px <= width) {
+  :root {
+    --page-padding: 20px;
+    --main-margin: 60px;
+    --section-gap: 80px;
+    --galery-gap: 20px;
+}
+}
