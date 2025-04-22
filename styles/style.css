@@ -180,7 +180,11 @@
 
 .article-title {
   color: var(--accent-color);
-  font-size: var(--subtitle-text-weight);
+  font-weight: var(--subtitle-text-weight);
+}
+
+.article-subtitle {
+  font-weight: var(--subtitle-text-weight);
 }
 
 .content__block-list {
