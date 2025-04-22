@@ -26,6 +26,10 @@
  
 }
 
+.theme-light .tag {
+  display: flex;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем переменные светлой темы */  
