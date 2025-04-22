@@ -26,8 +26,9 @@
  
 }
 
-.theme-light .tag {
-  display: flex;
+.theme-light .header__tag,
+:root.theme-light .header__tag {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,5 +44,9 @@
   --title-color: #ffc2e6;
   --title-shadow-color: #ff8dcb;
   --subtitle-color: #353430;  
+  }
+
+  :root:not(.theme-dark) .header__tag {
+    display: none;
   }
 }
