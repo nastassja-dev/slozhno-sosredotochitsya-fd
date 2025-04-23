@@ -8,15 +8,14 @@
   --bg-color: #000028;;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
+  --decorated-color: #ff0070;
   --button-color-hover: rgba(255, 0, 112, 0.4);
   --button-color: #ff0070;
   --decorated-color: #ff0070;
   --title-color: #DB00FF;
   --title-weight: 700;
   --subtitle-color: #000028;
-  --subtitle-text-weight: 700;
   --header-text-color: #000028;
-  --header-text-weight: 700;
   --content-font-family: 'IBM Plex Mono', sans-serif;
   --content-font-size: 18px;
   --content-line-height: 23.4px;

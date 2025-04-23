@@ -16,15 +16,15 @@
   --button-color-hover: rgba(50, 49, 45, 0.4);
   --content-title-color: #353430;
   --button-color: #353430;
+  --decorated-color: #353430;
   --title-color: #ffc2e6;
   --title-shadow-color: #ff8dcb;
   --subtitle-color: #353430;
 }
 
-.theme-light .page {
+/*.theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
- 
-}
+/*}*/
 
 .theme-light .header__tag,
 :root.theme-light .header__tag {
@@ -41,12 +41,13 @@
   --button-color-hover: rgba(50, 49, 45, 0.4);
   --content-title-color: #353430;
   --button-color: #353430;
+  --decorated-color: #353430;
   --title-color: #ffc2e6;
   --title-shadow-color: #ff8dcb;
-  --subtitle-color: #353430;  
+  --subtitle-color: #353430;
   }
 
-  :root:not(.theme-dark) .header__tag {
+  :root:not(.theme-light) .header__tag {
     display: none;
   }
 }

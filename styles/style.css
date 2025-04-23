@@ -127,7 +127,7 @@
 
 /* Заголовок */
 .title {
-  font-weight: var(--header-text-weight);
+  font-weight: var(--title-weight);
   line-height: 0.83;
   color: var(--title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -149,7 +149,7 @@
 
 .header__subtitles-item {
   font-size: var(--content-font-size);
-  font-weight: var(--subtitle-text-weight);
+  font-weight: var(--title-weight);
   color: var(--subtitle-color);
   max-width: 100%;
   /*align-self: center;*/
@@ -176,15 +176,16 @@
 .content_section {
   display: grid;
   gap: var(--content-section-gap);
+  align-items: stretch;
 }
 
 .article-title {
   color: var(--accent-color);
-  font-weight: var(--subtitle-text-weight);
+  font-weight: var(--title-weight);
 }
 
 .article-subtitle {
-  font-weight: var(--subtitle-text-weight);
+  font-weight: var(--title-weight);
 }
 
 .content__block-list {
@@ -256,28 +257,6 @@
   position: relative;
 }
 
-.decorated-zone::before {
-  content: '';
-  position: absolute;
-  border-inline-end: 1px solid var(--decorated-color);
-  border-block-start: 1px solid var(--decorated-color);
-  inset-block-start: var(--page-padding);
-  inset-inline-end: var(--page-padding);
-  inline-size: 25px;
-  block-size: 25px;
-}
-
-.decorated-zone::after {
-  content: '';
-  position: absolute;
-  border-inline-start: 1px solid var(--decorated-color);
-  border-block-end: 1px solid var(--decorated-color);
-  inset-block-end: var(--page-padding);
-  inset-inline-start: var(--page-padding);
-  inline-size: 25px;
-  block-size: 25px;
-}
-
 .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
@@ -322,7 +301,17 @@
 
   .how-article {
     grid-column: 2 / 4;
+    align-self: start;
     }
+
+  .how-article-title {
+    grid-row: 1 / span 2;
+  }
+
+  .how-article-subtitle {
+    grid-column: span 2;
+    align-self: start;
+  }
 
   .gallery__items {
     grid-template-columns: repeat(3, 1fr);
