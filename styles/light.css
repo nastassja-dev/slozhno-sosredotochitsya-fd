@@ -22,10 +22,6 @@
   --subtitle-color: #353430;
 }
 
-/*.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-/*}*/
-
 .theme-light .header__tag,
 :root.theme-light .header__tag {
   display: none;
@@ -34,17 +30,17 @@
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем переменные светлой темы */  
-    --bg-image: url('../images/cover-image-light.png');
-  --bg-color: #fff1f7;
-  --text-color: #353430;
-  --accent-color: #ff8dcb;
-  --button-color-hover: rgba(50, 49, 45, 0.4);
-  --content-title-color: #353430;
-  --button-color: #353430;
-  --decorated-color: #353430;
-  --title-color: #ffc2e6;
-  --title-shadow-color: #ff8dcb;
-  --subtitle-color: #353430;
+   --bg-image: url('../images/cover-image-light.png');
+   --bg-color: #fff1f7;
+   --text-color: #353430;
+   --accent-color: #ff8dcb;
+   --button-color-hover: rgba(50, 49, 45, 0.4);
+   --content-title-color: #353430;
+   --button-color: #353430;
+   --decorated-color: #353430;
+   --title-color: #ffc2e6;
+   --title-shadow-color: #ff8dcb;
+   --subtitle-color: #353430;
   }
 
   :root:not(.theme-light) .header__tag {

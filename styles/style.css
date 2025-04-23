@@ -39,7 +39,7 @@
 
 .header__theme-menu-button {
   border: none;
-  padding-block-end: 4px; /* отступ снизу? */
+  padding-block-end: 4px; /* отступ */
   color: var(--button-color);
   font-weight: var(--content-font-weight);
   font-size: var(--content-font-size);
@@ -111,7 +111,6 @@
   inset-block-start: var(--page-padding);
   inset-inline-end: calc(9px + var(--page-padding));
   /* Показывать только в тёмной теме */
-  /*display: none;*/
 }
 
 .header__tag::after {
@@ -152,7 +151,6 @@
   font-weight: var(--title-weight);
   color: var(--subtitle-color);
   max-width: 100%;
-  /*align-self: center;*/
   border-radius: 0;
   margin: 0;
   width: fit-content;
