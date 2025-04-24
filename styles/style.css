@@ -165,10 +165,10 @@
   
   /* Стили для main */
   
-  .main {
-    display: flex;
-    flex-direction: column;
-    gap: var(--section-gap);
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
 }
 
 .content_section {
@@ -178,7 +178,7 @@
 }
 
 .article-title {
-  color: var(--accent-color);
+  color: var(--article-title-color);
   font-weight: var(--title-weight);
 }
 
@@ -207,11 +207,13 @@
 }
 
 .link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--text-color);
 }
+
 .link:focus {
   outline: none;
 }
+
 .link:focus-visible {
   outline: 1px solid var(--text-color);
 }
@@ -249,18 +251,56 @@
   height: max(100vh, 668px);
 }
 
-/* Декоративные уголки footer */
-
-.footer.decorated-zone {
-  position: relative;
-}
-
 .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 
 /* Стили для адаптива */
+
+@media (max-width: 374px) {
+  /* Заголовок */
+  .header__title {
+    font-size: 5rem;
+    line-height: 1;
+    word-break: break-word;
+    max-inline-size: 100%;
+    overflow: hidden; 
+    word-break: keep-all; 
+    white-space: normal; 
+    hyphens: none;
+  }
+
+  /* Кнопки меню */
+  .header__theme-menu {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+    max-width: 100%;
+  }
+
+  /* горизонтальный скролл */
+  .header,
+  .main,
+  .footer  {
+    overflow-x: hidden;
+  }
+
+  .footer__title {
+    font-size: 5rem;
+    line-height: 1;
+    word-break: break-word;
+    max-inline-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
 
 @media (width >= 768px) {
   .header {
@@ -328,7 +368,6 @@
     grid-column: 1;
     grid-row: 2 / 4;
     }
-
    
   .gallery__image:nth-child(5) {
     grid-column: 2 / 4;
